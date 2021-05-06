@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BlogLab.Models.BlogComment
 {
-    class BlogComment : BlogCommentCreate
+    public class BlogComment : BlogCommentCreate
     {
         public string Username { get; set; }
 
