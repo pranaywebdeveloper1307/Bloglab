@@ -99,7 +99,8 @@ namespace Bloglab.web
             }
             else
             {
-                app.UseCors();
+                app.UseCors(options => options.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+                
             }
 
             app.UseAuthentication();
